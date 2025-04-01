@@ -15,6 +15,6 @@
 # [END cloudbuild_quickstart_automate]
 steps:
 - name: 'bash'
-  args: ['echo', 'Hello world!']
+  args: ['echo', 'Hello woqrld!']
 options:
   logging: GCS_ONLY
