@@ -16,6 +16,3 @@
 steps:
   - name: 'bash'
     args: ['go', 'run', 'quickstart-automate/main.go']
-serviceAccount: '/onepoint-opp-stg/serviceAccounts/gar-stg-sa@onepoint-opp-stg.iam.gserviceaccount.com'
-options:
-  logging: None
