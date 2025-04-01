@@ -3,6 +3,6 @@
     "config:recommended"
   ],
   "schedule": [
-    "before 8am on the first day of the month"
+    "before 8am on the first day of the months"
   ]
 }
