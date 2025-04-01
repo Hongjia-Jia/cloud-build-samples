@@ -14,5 +14,7 @@
 
 # [END cloudbuild_quickstart_automate]
 steps:
-  - name: 'bash'
-    args: ['go', 'run', 'quickstart-automate/main.go']
+- name: 'bash'
+  args: ['echo', 'Hello world!']
+options:
+  logging: CLOUD_LOGGING_ONLY
