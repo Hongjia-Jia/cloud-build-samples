@@ -16,7 +16,6 @@
 steps:
   - name: 'bash'
     args: ['go', 'run', 'quickstart-automate/main.go']
-logsBucket: 'LOGS_BUCKET_LOCATION'
 serviceAccount: '/onepoint-opp-stg/serviceAccounts/gar-stg-sa@onepoint-opp-stg.iam.gserviceaccount.com'
 options:
-  logging: GCS_ONLY
+  logging: None
