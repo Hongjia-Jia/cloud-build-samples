@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START cloudbuild_quickstart_automate]
-steps:
-  - name: golang
-    args: ['go', 'run', 'quickstart-automate/main.go']
-options:
-  logging: NONE
 # [END cloudbuild_quickstart_automate]
+steps:
+  - name: 'bash'
+    args: ['go', 'run', 'quickstart-automate/main.go']
+logsBucket: 'LOGS_BUCKET_LOCATION'
+serviceAccount: '/onepoint-opp-stg/serviceAccounts/gar-stg-sa@onepoint-opp-stg.iam.gserviceaccount.com'
+options:
+  logging: GCS_ONLY
